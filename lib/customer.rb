@@ -20,7 +20,7 @@ class Customer
 
   def meals
     collection = Meal.all.select{|meal| meal.customer == self}
-    binding.pry
+    collection
   end
 
   def waiters
