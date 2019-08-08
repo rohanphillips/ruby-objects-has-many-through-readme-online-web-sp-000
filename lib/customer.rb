@@ -19,8 +19,8 @@ class Customer
   end
 
   def meals
-    #collection = Meal.all.select{|meal| meal.customer == self}
-    binding pry
+    collection = Meal.all.select{|meal| meal.customer == self}
+    collection
   end
 
   def waiters
@@ -28,7 +28,5 @@ class Customer
       meal.waiter
     end
   end
-
-end
 
 end
