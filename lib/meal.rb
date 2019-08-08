@@ -18,6 +18,7 @@ class Meal
 
   def meals
     collection = Meal.all.select{|meal| meal.waiter == self} #checking for waiter now
+    collection
   end
 
   def best_tipper
